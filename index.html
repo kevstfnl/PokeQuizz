@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/styles/index.css">
+  <title>Quizz Pokemon</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Quizz Pokemon</h1>
+    </header>
+
+
+    <main>
+      <section>
+
+        <h2>Trouve le nom de ce pokemon:</h2>
+
+        <article class="cards">
+
+          <section id="loading" class="research">
+            <p>Chargement...</p>
+            <div class="loader"></div>
+          </section>
+
+          <div id="result" class="result hidden">
+            <div class="sprites" id="spritesImg">
+              <div class="sprites-face">
+                <img src="" alt="pokemon de face" class="front" id="frontFace" draggable="false">
+              </div>
+              <div class="sprites-back">
+                <img src="" alt="pokemon de dos" class="back" id="backFace" draggable="false">
+              </div>
+            </div>
+            <div class="cards-controler">
+              <button id="turn" class="control-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="undefined">
+                  <path
+                    d="M204-318q-22-38-33-78t-11-82q0-134 93-228t227-94h7l-64-64 56-56 160 160-160 160-56-56 64-64h-7q-100 0-170 70.5T240-478q0 26 6 51t18 49l-60 60ZM481-40 321-200l160-160 56 56-64 64h7q100 0 170-70.5T720-482q0-26-6-51t-18-49l60-60q22 38 33 78t11 82q0 134-93 228t-227 94h-7l64 64-56 56Z" />
+                </svg>
+              </button>
+              <button id="crie" class="control-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="undefined">
+                  <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </article>
+      </section>
+
+
+
+
+      <form class="input-container" id="inputContainer">
+        <div class="inputs">
+          <input type="text" id="userInput" name="pokemon" placeholder="">
+          <label for="userInput">Nom du pokemon</label>
+        </div>
+        <div class="input-buttons">
+          <button type="button" id="validInput" class="valid">Valider</button>
+          <button type="button" id="skipButton" class="skip">Abandonner</button>
+        </div>
+      </form>
+
+    </main>
+    <footer>
+      <p>Kevin Stefanelli</p>
+    </footer>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
